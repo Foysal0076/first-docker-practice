@@ -1,34 +1,36 @@
-Build Docker Image
+## Build Docker Image
+    $ docker build -t hello-docker .
 
         -t           -> tag to identify the image
         hello-docker -> Specifying the docker file name
         .            -> Referencing the current directory
-    $ docker build -t hello-docker .
 
-List all docker image
+## List all docker image
+
     docker image ls
     docker images
 
-Run the image
+## Run the image
     docker run hello-docker
 
-List Docker processes
+## List Docker processes
     docker ps //shows only running containers
     docker ps -a //shows all containers with stopped containers
 
-Pull a docker image
+## Pull a docker image
     docker run <image_name>
     docker run -it <image_name> //run container in interactive mode(-it stands for interactive)
 
-whoami -> Shows current user
-echo $0 -> shows location of the shell program
-history -> shows all command history // !2 will run the second command from the history
-apt update -> update package database
-apt install <package_name>-> install a package
-apt remove <package_name>-> remove a package
+## Some commands
+    whoami -> Shows current user
+    echo $0 -> shows location of the shell program
+    history -> shows all command history // !2 will run the second command from the history
+    apt update -> update package database
+    apt install <package_name>-> install a package
+    apt remove <package_name>-> remove a package
 
 
-File system
+## File system commands
     pwd -> parent working directory
     ls (optionally you can specify a directory)-> listing files
     ls -l -> long listing
@@ -53,10 +55,6 @@ File system
     echo hello > hello.txt -> save a new file with the texts
     ls -l /etc > longlist.txt
 
-
-
-
-
-
-bash means bourne again shell
-apt means advanced package tool
+## Some Facts
+1. bash means bourne again shell
+2. apt means advanced package tool
